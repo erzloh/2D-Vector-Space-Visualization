@@ -4,22 +4,22 @@
 
 This repository contains JavaScript code to visualize transformations in a 2D vector space. See how vectors and points transform under different matrix operations like shearing, shrinking, and rotating, through an animation from the initial vector space to the transformed one. The visualization is rendered using HTML5 Canvas.
 
-I decided to do this project to put into practice Linear Algebra theory that I learned from the 3Blue1Brown Essence of Linear Algebra YouTube playlist (https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab).
+I decided to do this project to put into practice Linear Algebra theory that I learned from the 3Blue1Brown [Essence of Linear Algebra YouTube playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab).
 
 ## Test the project
 
-This project is hosted using GitHub Pages. You can test the project live at [Project Live Demo URL](https://erzloh.github.io/2D-Vector-Space-Visualization/).
+This project is hosted using GitHub Pages. You can test the project [here](https://erzloh.github.io/2D-Vector-Space-Visualization/).
 
 ## Usage
 
 1. The canvas will initialize with a set of predefined vectors and points.
-2. Click on the "Transform" button to apply the matrices and observe how the vectors and points transform.
+2. Click on the "Transform" button to apply the linear transformation from the matrices and observe how the vectors and points transform.
 
 ### Adding Vectors, Points, and Matrices from the DevTools Console
 
 If you want to experiment with your own vectors, points, or matrices, you can do so directly from the browser's DevTools console.
 
-1. **Open DevTools Console**: Right-click anywhere on the webpage and select 'Inspect Element', then navigate to the 'Console' tab.
+1. **Open DevTools Console**: Right-click anywhere on the webpage and select 'Inspect', then navigate to the 'Console' tab.
 
 2. **Add a Vector**: To add a vector, use the following command:
     ```javascript
@@ -45,7 +45,7 @@ If you want to experiment with your own vectors, points, or matrices, you can do
     ```
     This will apply all matrices added so far to all vectors and points in the vector space.
 
-6. **Animate Transformation**: To see the transformation, click the 'Transform' button in the interface, or set `t = 0; animating = true;` from the console to initiate the animation.
+6. **Animate Transformation**: To see the transformation, click the 'Transform' button.
 
 Feel free to experiment and visualize how different vectors, points, and matrices interact!
 
