@@ -79,9 +79,56 @@ function VectorSpace() {
 	}
 
 	this.applyMatrices = function() {
+		// Reset the final vectors to the initial vectors
+		for (let i = 0; i < this.vectors.final.length; i++) {
+			this.vectors.final[i].x = this.vectors.initial[i].x;
+			this.vectors.final[i].y = this.vectors.initial[i].y;
+		}
+
+		// Reset the final points to the initial points
+		for (let i = 0; i < this.points.final.length; i++) {
+			this.points.final[i].x = this.points.initial[i].x;
+			this.points.final[i].y = this.points.initial[i].y;
+		}
+
+		// Apply the matrices to the vectors and points
 		for (let i = 0; i < this.matrices.length; i++) {
 			this.transform(this.matrices[i]);
 		}
+	}
+
+	this.reset = function() {
+		// Reset the vectors
+		for (let i = 0; i < this.vectors.transition.length; i++) {
+			this.vectors.transition[i].x = this.vectors.initial[i].x;
+			this.vectors.transition[i].y = this.vectors.initial[i].y;
+
+			// this.vectors.final[i].x = this.vectors.initial[i].x;
+			// this.vectors.final[i].y = this.vectors.initial[i].y;
+		}
+
+		// Reset the points
+		for (let i = 0; i < this.points.transition.length; i++) {
+			this.points.transition[i].x = this.points.initial[i].x;
+			this.points.transition[i].y = this.points.initial[i].y;
+
+			// this.points.final[i].x = this.points.initial[i].x;
+			// this.points.final[i].y = this.points.initial[i].y;
+		}
+	}
+
+	this.clearVectorSpace = function() {
+		this.vectors.initial = [];
+		this.vectors.transition = [];
+		this.vectors.final = [];
+		this.points.initial = [];
+		this.points.transition = [];
+		this.points.final = [];
+		this.matrices = [];
+
+		// Add the basis vectors back
+		this.addVector(100, 0);
+		this.addVector(0, 100);
 	}
 }
 
@@ -273,9 +320,21 @@ function animate() {
 animate();
 
 // ------------------------------ Event listeners ------------------------------
-const button = document.getElementById('transformation-button');
-
-button.addEventListener('click', () => {
+const transformationButton = document.getElementById('transformation-button');
+transformationButton.addEventListener('click', () => {
 	t = 0;
 	animating = true;
+	vs.applyMatrices();
+});
+
+const resetButton = document.getElementById('reset-button');
+resetButton.addEventListener('click', () => {
+	vs.reset();
+	// t = 0;
+	// animating = false;
+});
+
+const clearButton = document.getElementById('clear-button');
+clearButton.addEventListener('click', () => {
+	vs.clearVectorSpace();
 });
