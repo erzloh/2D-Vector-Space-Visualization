@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains JavaScript code to visualize transformations in a 2D vector space. See how vectors and points transform under different matrix operations like shearing, shrinking, and rotating, through an animation from the initial vector space to the transformed one. The visualization is rendered using HTML5 Canvas.
+This project gives a visualization for linear transformations in a 2D vector space. See how vectors and points transform under different matrix operations like shearing, shrinking, and rotating, through an animation from the initial vector space to the transformed one. The visualization is rendered using HTML5 Canvas.
 
 I decided to do this project to put into practice Linear Algebra theory I learned from the 3Blue1Brown's [Essence of Linear Algebra YouTube playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab).
 
