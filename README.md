@@ -48,3 +48,5 @@ If you want to experiment with your own vectors, points, or matrices, you can do
 6. **Animate Transformation**: To see the transformation, click the 'Transform' button.
 
 Feel free to experiment and visualize how different vectors, points, and matrices interact!
+
+![Screen Recording](./example_video.gif)
