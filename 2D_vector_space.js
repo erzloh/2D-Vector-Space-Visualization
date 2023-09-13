@@ -253,10 +253,15 @@ const drawLineBetweenPoints = (v1, v2, color) => {
 	drawLine(v1.x, v1.y, v2.x, v2.y, color);
 }
 
-// Linear interpolation
+// Easing Functions
+const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+
+// Linear interpolation using an easing function
 const lerp = (a, b, t) => {
-	return a + (b - a) * t;
+	const easedT = easeOutCubic(t);
+	return a + (b - a) * easedT;
 }
+
 
 // ------------------------------ Creating objects ------------------------------
 // Initialize vector space
