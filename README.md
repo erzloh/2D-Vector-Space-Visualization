@@ -45,7 +45,23 @@ If you want to experiment with your own vectors, points, or matrices, you can do
     ```
     This will apply all matrices added so far to all vectors and points in the vector space.
 
-6. **Animate Transformation**: To see the transformation, click the 'Transform' button.
+6. **See the List of Current Vectors**: To view all vectors existing in the vector space, you can enter:
+    ```javascript
+    vs.vectors.initial
+    ```
+
+7. **See the List of Current Points**: To see all points, enter:
+    ```javascript
+    vs.points.initial
+    ```
+
+8. **See the List of Current Matrices**: To view all the matrices, enter:
+    ```javascript
+    vs.matrices
+    ```
+    This will list all the 2x2 matrices, each represented by its values `a`, `b`, `c`, and `d`.
+
+9. **Animate Transformation**: To see the transformation, click the 'Transform' button.
 
 Feel free to experiment and visualize how different vectors, points, and matrices interact!
 
