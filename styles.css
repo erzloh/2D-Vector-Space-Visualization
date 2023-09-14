@@ -1,6 +1,6 @@
 body {
 	font-family: 'Source Code Pro', monospace;
-	background: #fff7f0;
+	background: #f3ede3;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -60,7 +60,7 @@ p {
 
 footer {
 	padding: 10px;
-	color: #bcbbbb;
+	color: #aba9a9;
 	font-size: 14px;
 	text-align: center;
 }
