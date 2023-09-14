@@ -1,13 +1,27 @@
 body {
 	font-family: 'Source Code Pro', monospace;
+	background: #fff7f0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+h1 {
+	font-weight: 400;
+	margin: 64px
 }
 
 canvas {
-	border: 1px solid #000;
+	/* border: 1px solid #000; */
+	display: block;
+	border-radius: 6px;
 }
 
 #buttons {
-	margin-top: 32px;
+	margin-top: 64px;
+	margin-bottom: 64px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -22,10 +36,11 @@ button {
 	border-radius: 10em;
 	font-size: 13px;
 	font-weight: 400;
+	font-family: inherit;
 	padding: 1em 2em;
 	cursor: pointer;
 	transition: all 0.3s ease-in-out;
-	border: 1px solid black;
+	border: 0px solid black;
 	box-shadow: 0 0 0 0 black;
 }
 
@@ -37,4 +52,15 @@ button:hover {
 button:active {
 	transform: translateY(2px) translateX(1px);
 	box-shadow: 0 0 0 0 black;
-};
+}
+
+p {
+	margin-bottom: 64px;
+}
+
+footer {
+	padding: 10px;
+	color: #bcbbbb;
+	font-size: 14px;
+	text-align: center;
+}
