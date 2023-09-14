@@ -272,15 +272,24 @@ vs.addVector(100, 0);
 vs.addVector(0, 100);
 
 // Initialize vectors
-vs.addVector(170, 130);
-vs.addVector(130, 170);
+vs.addVector(70, -50);
 
 // Initialize points
-vs.addPoint(50, 150);
-vs.addPoint(150, 150);
-vs.addPoint(150, 50);
-vs.addPoint(50, 50);
-vs.addPoint(100, 100);
+vs.addPoint(20, 20);
+vs.addPoint(20, 70);
+vs.addPoint(70, 120);
+vs.addPoint(170, 120);
+vs.addPoint(220, 70);
+vs.addPoint(220, 20);
+vs.addPoint(170, 70);
+vs.addPoint(70, 70);
+vs.addPoint(20, 20);
+vs.addPoint(70, 70);
+vs.addPoint(220, 70);
+vs.addPoint(170, 70);
+vs.addPoint(70, 120);
+vs.addPoint(170, 120);
+
 
 
 // Add the matrices to the vector space
