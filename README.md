@@ -6,6 +6,8 @@ This project gives a visualization for linear transformations in a 2D vector spa
 
 I decided to do this project to put into practice Linear Algebra theory I learned from the 3Blue1Brown's [Essence of Linear Algebra YouTube playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab).
 
+The project is written in plain HTML, CSS and JavaScript.
+
 ## Test the project
 
 This project is hosted using GitHub Pages. You can test the project [here](https://erzloh.github.io/2D-Vector-Space-Visualization/).
